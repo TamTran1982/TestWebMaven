@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - Run test scripts on Chrome</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>Run test scripts on Chrome</h1>
+<p>
+  Test duration: 218.624s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">web.testscript.TestScriptForWeb</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_05_CheckRegister
+      </td>
+  <td class="duration">
+    180.441s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.TimeoutException: java.util.concurrent.TimeoutException<br/>
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;<br/>
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Command: [9239ad894d1dc9c2b148e3e0bd85fb91, findElement {using=xpath, value=//div[@class=&apos;header-button&apos;]//span[contains(text(), &apos;??ng ký&apos;)]}]<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.119, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\tranv\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59581}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59581/devtoo..., se:cdpVersion: 130.0.6723.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 9239ad894d1dc9c2b148e3e0bd85fb91</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.remote.http.jdk.JdkHttpClient.execute(JdkHttpClient.java:422)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)<br />
+              org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)<br />
+              org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)<br />
+              org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)<br />
+              org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)<br />
+              commons.AbstractPage.waitForControlClickable(AbstractPage.java:447)<br />
+              web.pages.VietNamPagePO.clickToRegisterButton(VietNamPagePO.java:22)<br />
+              web.testscript.TestScriptForWeb.TC_05_CheckRegister(TestScriptForWeb.java:111)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">java.util.concurrent.TimeoutException</a><br />
+        <div class="stackTrace" id="exception-1">
+                      java.base/java.util.concurrent.CompletableFuture$Timeout.run(CompletableFuture.java:2874)<br />
+                      java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)<br />
+                      java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
+                      java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+                      java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+                      java.base/java.lang.Thread.run(Thread.java:842)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  
+</body>
+</html>
