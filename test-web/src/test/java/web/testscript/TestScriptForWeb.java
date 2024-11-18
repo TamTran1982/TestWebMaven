@@ -107,7 +107,7 @@ public class TestScriptForWeb extends AbstractTest {
 		System.out.println("Window 1: "+parent1);
 		vietnamPage.switchToWindowByTitle(driver, parent1);		
 					
-		
+		//
 		vietnamPage.clickToRegisterButton();
 		registerPage=vietnamPage.clickToRegisterPopupButton(); 
 		parent2=driver.getTitle();
